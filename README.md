@@ -14,8 +14,8 @@ class Contato:
 class ArvoreBinaria:
     def __init__(self):
         self.raiz = None
-
-    def inserir_contato(self, nome, telefone):
+        
+        def inserir_contato(self, nome, telefone):
         if self.raiz is None:
             self.raiz = No(Contato(nome, telefone))
         else:
@@ -93,11 +93,11 @@ class ArvoreBinaria:
     def lista_vazia(self):
         return self.raiz is None
 
-# Exemplo de uso:
+
 arvore_contatos = ArvoreBinaria()
 arvore_contatos.inserir_contato("Joao", "123456789")
 arvore_contatos.inserir_contato("Maria", "987654321")
-arvore_contatos.inserir_contato("Carlos", "456123789")
+arvore_contatos.inserir_contato("Theo", "992661231")
 
 print("Lista de contatos em ordem alfabética:")
 for contato in arvore_contatos.listar_contatos_ordem_alfabetica():
